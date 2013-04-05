@@ -1,0 +1,9 @@
+en:
+  useful_helpers:
+    breadcrumbs:
+      root: Home page
+      dashboard: Dashboard
+      admin: Admin
+    page: Page
+    regional_suffix: in Tomsk
+    city_abbr: ""

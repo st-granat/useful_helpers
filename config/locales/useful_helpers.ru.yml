@@ -1,0 +1,9 @@
+ru:
+  useful_helpers:
+    breadcrumbs:
+      root: Главная
+      dashboard: Мой кабинет
+      admin: Админка
+    page: Страница
+    regional_suffix: в Томске
+    city_abbr: "г."
