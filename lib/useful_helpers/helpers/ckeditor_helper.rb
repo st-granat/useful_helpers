@@ -1,6 +1,10 @@
 # coding: utf-8
-module CkeditorHelper
-  def ckeditor
-    render "shared/ckeditor"
+module UsefulHelpers
+  module Helpers
+    module CkeditorHelper
+      def ckeditor
+        render "shared/ckeditor"
+      end
+    end
   end
 end
