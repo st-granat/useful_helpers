@@ -49,6 +49,9 @@ module UsefulHelpers
 
       def build_meta_title
         html = @meta_title
+        if @medium_title.present?
+          html << " — #{@medium_title}"
+        end
         city_abbr = I18n.t("useful_helpers.city_abbr")
         regional_suffix = I18n.t("useful_helpers.regional_suffix")
         unless ca('welcome', 'index')
