@@ -43,7 +43,7 @@ module UsefulHelpers
         return "" if path.nil?
         first_link = ["<a title=\"#{anchor}\" href=\"#{path}\">#{anchor}</a>"]
         content_for :breadcrumbs do
-          raw "<div class=\"breadcrumbs\">#{(first_link+links).flatten.join(delimiter)}</div>"
+          raw "<div class=\"breadcrumbs\">#{(first_link+links).flatten.compact.join(delimiter)}</div>"
         end
       end
 
