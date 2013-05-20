@@ -6,6 +6,7 @@ require "useful_helpers/helpers/formtastic_helper"
 require "useful_helpers/helpers/paginate_helper"
 require "useful_helpers/helpers/seo_helper"
 require "useful_helpers/helpers/url_helper"
+require "useful_helpers/helpers/text_helper"
 
 module UsefulHelpers
   class Engine < ::Rails::Engine
@@ -20,6 +21,7 @@ module UsefulHelpers
       ActionView::Base.send :include, UsefulHelpers::Helpers::PaginateHelper
       ActionView::Base.send :include, UsefulHelpers::Helpers::SeoHelper
       ActionView::Base.send :include, UsefulHelpers::Helpers::UrlHelper
+      ActionView::Base.send :include, UsefulHelpers::Helpers::TextHelper
     end
   end
 end
