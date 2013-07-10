@@ -24,9 +24,9 @@ module UsefulHelpers
         end
       end
 
-      # def skype_to(login)
-      #   raw "<a href=\"skype:#{login}?call\">#{login}</a>"
-      # end
+      def st_w?(path)
+        request.fullpath.start_with?(path)
+      end
     end
   end
 end
