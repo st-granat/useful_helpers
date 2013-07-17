@@ -3,7 +3,11 @@ module UsefulHelpers
   module Helpers
     module DateTimeHelper
 	    def localize_date(date, format=:long)
-		    I18n.localize(date, :format => format)
+	      begin
+  		    I18n.localize(date, :format => format)
+		    rescue
+		      ""
+		    end
 	    end
     end
   end
