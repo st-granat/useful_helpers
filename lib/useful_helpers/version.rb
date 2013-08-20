@@ -1,3 +1,3 @@
 module UsefulHelpers
-  VERSION = "0.0.21"
+  VERSION = "0.0.26"
 end
