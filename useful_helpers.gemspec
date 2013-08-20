@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["railscode@gmail.com"]
   spec.description   = "Useful helpers methods for Good Rails App"
   spec.summary       = "Useful helpers methods for Good Rails App"
-  spec.homepage      = "https://github.com/vav/useful_helpers"
+  spec.homepage      = "https://github.com/st-granat/useful_helpers"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
