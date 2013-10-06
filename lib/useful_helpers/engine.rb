@@ -10,6 +10,8 @@ require "useful_helpers/helpers/url_helper"
 require "useful_helpers/helpers/text_helper"
 require "useful_helpers/helpers/videos_helper"
 
+require "untransliterate"
+
 module UsefulHelpers
   class Engine < ::Rails::Engine
     isolate_namespace UsefulHelpers
