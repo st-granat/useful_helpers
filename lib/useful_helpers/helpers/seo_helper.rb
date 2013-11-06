@@ -53,7 +53,7 @@ module UsefulHelpers
           html << " — #{@medium_title}"
         end
         city_abbr = I18n.t("useful_helpers.city_abbr")
-        regional_suffix = I18n.t("useful_helpers.regional_suffix")
+        regional_suffix = @city.present? ? @city.formatted : I18n.t("useful_helpers.regional_suffix")
         unless ca('welcome', 'index')
           if html.include?(regional_suffix)
             html << " — #{@site_name}"
