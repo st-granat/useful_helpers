@@ -54,7 +54,7 @@ module UsefulHelpers
         end
         city_abbr = I18n.t("useful_helpers.city_abbr")
         regional_suffix = @city.present? ? @city.formatted : I18n.t("useful_helpers.regional_suffix")
-        unless ca('welcome', 'index')
+        unless ca('welcome', 'index') || ca('granat_cms/welcome', 'index')
           if html.include?(regional_suffix)
             html << " — #{@site_name}"
           elsif @city.present?
